@@ -12,7 +12,7 @@ const CARET = <i className="uf uf-arrow-down"></i>;
 const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
-var Demo1 = require("./demolist/Demo1");var DemoArray = [{"example":<Demo1 />,"title":" 这是标题","code":"/**\n*\n* @title 这是标题\n* @description 这是描述\n*\n*/\n\nimport React, { Component } from 'react';\nimport D3Graph from 'tinper-bee';\n\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t欢迎使用老赵DEMO系统\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n","desc":" 这是描述"}]
+var Demo1 = require("./demolist/Demo1");var DemoArray = [{"example":<Demo1 />,"title":" d3环形饼状图","code":"/**\n*\n* @title d3环形饼状图\n* @description\n* label: 标签名称\n* unit: 单位\n* title: 标题\n* circelSpan:  饼状环的宽度\n* labelLineLength1: 第一段引出线的长度\n* labelLineLength2: 第二段引出线的长度\n* value: 数据\n*\n*/\n\nimport React, { Component } from 'react';\nimport D3Graph from 'bee-d3Graph';\n\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div style={{width: 500,height: 500}}>\n\t\t\t\t<D3Graph\n\t\t\t\t\tlabel={['健康', '异常', '未知']}\n\t\t\t\t\tunit='个'\n\t\t\t\t\ttitle='应用健康状况比例图'\n\t\t\t\t\talpha={0.5}\n\t\t\t\t\tcircleSpan={[25,15,10]}\n\t\t\t\t\tlabelLineLength1={25}\n\t\t\t\t\tlabelLineLength2={100}\n\t\t\t\t\tvalue={[10, 10, 10]}\n\t\t\t\t>\n\n\t\t\t\t</D3Graph>\n\t\t\t</div>\n\n\t\t)\n\t}\n}\n\n","desc":""}]
 
 
 class Demo extends Component {
