@@ -1,7 +1,6 @@
 /**
 *
-* @title 这是标题
-* @description 这是描述
+* @title 液体灌装仪
 *
 */
 
